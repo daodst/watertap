@@ -1,2 +1,2 @@
 # water_tap
-water_tap
+Test chain token application
