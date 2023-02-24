@@ -20,8 +20,8 @@ var langJson = {
 var app = new Vue({
   el: '#app',
   data: {
-    langType: 'cn',
-    lang: langJson['cn'],
+    langType: 'en',
+    lang: langJson['en'],
     address: '',
     MsgVisible: false,
     message: '',
