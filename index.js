@@ -20,8 +20,8 @@ var langJson = {
 var app = new Vue({
   el: '#app',
   data: {
-    langType: 'en',
-    lang: langJson['en'],
+    langType: 'cn',
+    lang: langJson['cn'],
     address: '',
     MsgVisible: false,
     message: '',
@@ -48,14 +48,15 @@ var app = new Vue({
       }
       this.loading = true
       axios({
-        url: '//3.35.42.193:50322/wallet',
+        url: '//n1.ttwww.org:50322/wallet',
         method: 'post',
         headers: {
           'Accept': '*/*',
           'Content-Type': 'application/x-www-form-urlencoded'
         },
         params: {
-          address: address
+          address: address,
+          lang: that.langType
         }
       })
       .then(function (response) {
