@@ -1,4 +1,4 @@
-if(window.location=="https:"){
+if(window.location.protocol=="https:"){
 	window.location.href = "http://" + window.location.host
 }
 
