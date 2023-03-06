@@ -1,3 +1,7 @@
+if(window.location=="https:"){
+	window.location.href = "http://" + window.location.host
+}
+
 var langJson = {
   cn: {
     tit: '寻找测试 (TT&FM) 币？',
@@ -16,6 +20,8 @@ var langJson = {
     message: 'Receive a mistake, please check the wallet address and try again'
   }
 }
+
+
 
 var app = new Vue({
   el: '#app',
