@@ -54,7 +54,7 @@ var app = new Vue({
       }
       this.loading = true
       axios({
-        url: '//n1.ttwww.org:50322/wallet',
+        url: '//n1.cipherblock.chat:50322/wallet',
         method: 'post',
         headers: {
           'Accept': '*/*',
