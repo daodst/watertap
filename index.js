@@ -12,9 +12,9 @@ var langJson = {
     message: '领取错误，请检查钱包地址后重试'
   },
   en: {
-    tit: 'Looking for Test (TT&FM) Coins？',
-    p1: 'Fill out your test wallet address to receive 200 TT & 200 FM , a purse can only be used once',
-    p2: 'We will test TT&FM distribution daily at 8am,12am,4pm（Dubai Time）',
+    tit: 'Looking for Test (DST&FM) Coins？',
+    p1: 'Fill out your test wallet address to receive 200 DST & 200 FM , a purse can only be used once',
+    p2: 'We will test DST&FM distribution daily at 8am,12am,4pm（Dubai Time）',
     placeholder: 'Test wallet address',
     btn: 'SUBMIT',
     message: 'Receive a mistake, please check the wallet address and try again'
