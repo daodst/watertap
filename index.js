@@ -4,8 +4,8 @@ if(window.location.protocol=="https:"){
 
 var langJson = {
   cn: {
-    tit: '寻找测试 (TT&FM) 币？',
-    p1: '填写您的钱包地址以获得200TT和200FM，每钱包地址只能获取一次',
+    tit: '寻找测试 (DST&FM) 币？',
+    p1: '填写您的钱包地址以获得200DST和200FM，每钱包地址只能获取一次',
     p2: '我们会在每天的8点，12点，16点，进行测试TT和FM的发放（迪拜时间）',
     placeholder: '请输入测试钱包地址',
     btn: '提交',
@@ -48,7 +48,7 @@ var app = new Vue({
         return
       }
       var reg = /^[a-z0-9]{42}$/i
-      if (!address.startsWith('dex') || !reg.test(address))  {
+      if (!address.startsWith('dst') || !reg.test(address))  {
         this.showMsg(this.lang['message'])
         return
       }
