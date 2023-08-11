@@ -4,16 +4,16 @@ if(window.location.protocol=="https:"){
 
 var langJson = {
   cn: {
-    tit: '寻找测试 (DST&FM) 币？',
-    p1: '填写您的钱包地址以获得200DST和200FM，每钱包地址只能获取一次',
-    p2: '我们会在每天的8点，12点，16点，进行测试DST和FM的发放（迪拜时间）',
+    tit: '寻找测试 (DST&NXN) 币？',
+    p1: '填写您的钱包地址以获得200DST和200NXN，每钱包地址只能获取一次',
+    p2: '我们会在每天的8点，12点，16点，进行测试DST和NXN的发放（迪拜时间）',
     placeholder: '请输入测试钱包地址',
     btn: '提交',
     message: '领取错误，请检查钱包地址后重试'
   },
   en: {
-    tit: 'Looking for Test (DST&FM) Coins？',
-    p1: 'Fill out your test wallet address to receive 200 DST & 200 FM , a purse can only be used once',
+    tit: 'Looking for Test (DST&NXN) Coins？',
+    p1: 'Fill out your test wallet address to receive 200 DST & 200 NXN , a purse can only be used once',
     p2: 'We will test DST&FM distribution daily at 8am,12am,4pm（Dubai Time）',
     placeholder: 'Test wallet address',
     btn: 'SUBMIT',
