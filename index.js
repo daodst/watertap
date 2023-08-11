@@ -14,7 +14,7 @@ var langJson = {
   en: {
     tit: 'Looking for Test (DST&NXN) Coins？',
     p1: 'Fill out your test wallet address to receive 200 DST & 200 NXN , a purse can only be used once',
-    p2: 'We will test DST&FM distribution daily at 8am,12am,4pm（Dubai Time）',
+    p2: 'We will test DST&NXN distribution daily at 8am,12am,4pm（Dubai Time）',
     placeholder: 'Test wallet address',
     btn: 'SUBMIT',
     message: 'Receive a mistake, please check the wallet address and try again'
