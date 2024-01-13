@@ -1,6 +1,6 @@
-if(window.location.protocol=="https:"){
-	window.location.href = "http://" + window.location.host
-}
+//if(window.location.protocol=="https:"){
+//	window.location.href = "http://" + window.location.host
+//}
 
 var langJson = {
   cn: {
