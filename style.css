@@ -84,7 +84,13 @@ body {
   line-height: 30px;
   cursor: pointer;
 }
-
+.btn{
+  background: #06A8FF;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
 .btn-icon {
   display: block;
   width: 22px;

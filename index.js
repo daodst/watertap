@@ -1,6 +1,6 @@
-//if(window.location.protocol=="https:"){
-//	window.location.href = "http://" + window.location.host
-//}
+// if(window.location.protocol=="https:"){
+// 	window.location.href = "http://" + window.location.host
+// }
 
 var langJson = {
   cn: {
@@ -9,7 +9,11 @@ var langJson = {
     p2: '我们会在每天的8点，12点，16点，进行测试DST和NXN的发放（迪拜时间）',
     placeholder: '请输入测试钱包地址',
     btn: '提交',
-    message: '领取错误，请检查钱包地址后重试'
+    message: '领取错误，请检查钱包地址后重试',
+    p3: '请复制下面链接在浏览器打开',
+    copy: '复制',
+    copySuccess: '复制成功',
+    copyFail: '复制失败'
   },
   en: {
     tit: 'Looking for Test (DST&NXN) Coins？',
@@ -17,10 +21,13 @@ var langJson = {
     p2: 'We will test DST&NXN distribution daily at 8am,12am,4pm（Dubai Time）',
     placeholder: 'Test wallet address',
     btn: 'SUBMIT',
-    message: 'Receive a mistake, please check the wallet address and try again'
+    message: 'Receive a mistake, please check the wallet address and try again',
+    p3: 'Please copy the link below in the browser to open',
+    copy: 'Copy',
+    copySuccess: 'Copy successful',
+    copyFail: 'Copy failed'
   }
 }
-
 
 
 var app = new Vue({
@@ -32,9 +39,31 @@ var app = new Vue({
     MsgVisible: false,
     message: '',
     timer: null,
-    loading: false
+    loading: false,
+    isHttps: window.location.protocol=="https:",
+    url: "http://" + window.location.host
   },
   mounted () {
+    var clipboard = new ClipboardJS('.btn');
+    var that = this
+  clipboard.on('success', function (e) {
+    e.clearSelection();
+    Toastify({
+      text: that.lang['copySuccess'],
+      duration: 2000,
+      gravity: "top", // `top` or `bottom`
+      position: "center", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: "rgba(0,0,0,0.8)",
+      },
+      onClick: function(){} // Callback after click
+    }).showToast();
+  });
+  clipboard.on('error', function (e) {
+    console.error('Action:', e.action);
+    console.error('Trigger:', e.trigger);
+  });
   },
   methods: {
     submit () {
